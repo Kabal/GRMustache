@@ -28,8 +28,8 @@
 
 @protocol GRMustacheTemplateDelegate<NSObject>
 @optional
-- (void)templateWillRender:(GRMustacheTemplate *)template AVAILABLE_GRMUSTACHE_VERSION_1_12_AND_LATER;
-- (void)templateDidRender:(GRMustacheTemplate *)template AVAILABLE_GRMUSTACHE_VERSION_1_12_AND_LATER;
-- (void)template:(GRMustacheTemplate *)template willRenderReturnValueOfInvocation:(GRMustacheInvocation *)invocation AVAILABLE_GRMUSTACHE_VERSION_1_12_AND_LATER;
-- (void)template:(GRMustacheTemplate *)template didRenderReturnValueOfInvocation:(GRMustacheInvocation *)invocation AVAILABLE_GRMUSTACHE_VERSION_1_12_AND_LATER;
+- (void)templateWillRender:(GRMustacheTemplate *)tmpl AVAILABLE_GRMUSTACHE_VERSION_1_12_AND_LATER;
+- (void)templateDidRender:(GRMustacheTemplate *)tmpl AVAILABLE_GRMUSTACHE_VERSION_1_12_AND_LATER;
+- (void)template:(GRMustacheTemplate *)tmpl willRenderReturnValueOfInvocation:(GRMustacheInvocation *)invocation AVAILABLE_GRMUSTACHE_VERSION_1_12_AND_LATER;
+- (void)template:(GRMustacheTemplate *)tmpl didRenderReturnValueOfInvocation:(GRMustacheInvocation *)invocation AVAILABLE_GRMUSTACHE_VERSION_1_12_AND_LATER;
 @end
